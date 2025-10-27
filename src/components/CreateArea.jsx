@@ -20,7 +20,7 @@ function CreateArea() {
 
       if (input.title.trim()!=="" && input.content.trim()!=="") {
         setItems((prevValue)=> {
-        return [...prevValue,input]
+        return [input, ...prevValue];
       });
       }
       
